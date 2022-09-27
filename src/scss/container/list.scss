@@ -7,7 +7,8 @@
     padding-bottom: 2px;
 }
 
-.to-do.list {
+.to-do-list,
+to-do-list--complete {
     display: flex;
     flex-direction: column;
 }

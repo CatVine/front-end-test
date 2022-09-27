@@ -19,7 +19,8 @@ body {
   padding-bottom: 2px;
 }
 
-.to-do.list {
+.to-do-list,
+to-do-list--complete {
   display: flex;
   flex-direction: column;
 }
@@ -44,7 +45,7 @@ body {
   padding-left: 20px;
 }
 
-.delete {
+.hide {
   right: 0;
   padding-right: 25px;
 }
