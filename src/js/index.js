@@ -2,16 +2,25 @@
 	console && console.log('%c careers@stormid.com ', 'background: #272727; color: #ffffff');
 }
 
+// error handling function
+
 function handleError(err) {
 	console.log('oops!');
 	console.log(err);
 }
 
+// retrieve tasks from api
+
 const tasks = "http://localhost:4000/api/todo";
 const taskData = fetch(tasks);
 
-taskData.then((response) => response.json())
-.then((data) => {
+// store retrieved data in variable
+
+const responseData = taskData.then((response) => response.json());
+
+// create task elements
+
+responseData.then((data) => {
 	for (let i = 0; i < data.length; i++) {
 		const listItem = document.createElement("LI");
 		listItem.classList.add('todo-list__item-container');
@@ -41,14 +50,15 @@ taskData.then((response) => response.json())
 })
 .catch(handleError);
 
-const toDoList = document.getElementsByTagName("LABEL");
-console.log(toDoList);
-for (let i = 0; i < toDoList.length; i++) {
-  const span = document.createElement("SPAN");
-  const hideButton = document.createTextNode("\u00D7");
-  span.className = "hide";
-  span.appendChild(hideButton);
-  toDoList[i].appendChild(span);
+const toDoList = Array.from(document.getElementsByTagName("li"));
+console.log(toDoList); 
+
+	for (let i = 0; i < toDoList.length; i++) {
+  		const span = document.createElement("SPAN");
+  		const hideButton = document.createTextNode("\u00D7");
+  		span.className = "hide";
+  		span.appendChild(hideButton);
+  		toDoList[i].appendChild(span);
 }
 
 const hide = document.getElementsByClassName("hide");

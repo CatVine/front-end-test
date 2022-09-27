@@ -3,3 +3,14 @@
     border-top: 2px solid grey;
     width: 680px;
 }
+
+.grey-divider--top {
+    margin-bottom: 40px;
+}
+
+.grey-divider--bottom {
+    bottom: 0;
+    position: absolute;
+    margin-left: 10px;
+    max-width: 680px;
+}

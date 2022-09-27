@@ -10,19 +10,44 @@ body {
   width: 680px;
 }
 
+.grey-divider--top {
+  margin-bottom: 40px;
+}
+
+.grey-divider--bottom {
+  bottom: 0;
+  position: absolute;
+  margin-left: 10px;
+  max-width: 680px;
+}
+
 .container {
   margin: 0;
   padding: 0;
   background-color: white;
   width: 700px;
+  height: 700px;
   padding-top: 2px;
   padding-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .to-do-list,
-to-do-list--complete {
+.to-do-list--complete {
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.to-do-list--complete {
+  position: absolute;
+  bottom: 20px;
+}
+
+.seperate {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .todo-list__item-container {
@@ -46,8 +71,7 @@ to-do-list--complete {
 }
 
 .hide {
-  right: 0;
-  padding-right: 25px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=index.css.map */
