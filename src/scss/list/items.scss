@@ -1,0 +1,19 @@
+.todo-list__item-container {
+    display: flex;
+    padding-left: 7px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    width: 40px;
+    border: 1px solid black;
+}
+
+.todo-list__item--checked {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.todo-list__new-item-container {
+    padding-left: 20px;
+}

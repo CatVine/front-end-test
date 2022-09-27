@@ -1,0 +1,13 @@
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 700px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.to-do.list {
+    display: flex;
+    flex-direction: column;
+}

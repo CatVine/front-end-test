@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(233, 234, 236);
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+.grey-divider {
+  border: none;
+  border-top: 2px solid grey;
+  width: 680px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 700px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.to-do.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list__item-container {
+  display: flex;
+  padding-left: 7px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  width: 40px;
+  border: 1px solid black;
+}
+
+.todo-list__item--checked {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.todo-list__new-item-container {
+  padding-left: 20px;
+}
+
+.delete {
+  right: 0;
+  padding-right: 25px;
+}
+
+/*# sourceMappingURL=index.css.map */
