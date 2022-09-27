@@ -52,13 +52,12 @@ responseData.then((data) => {
 
 const toDoList = Array.from(document.getElementsByTagName("li"));
 console.log(toDoList); 
-
-	for (let i = 0; i < toDoList.length; i++) {
-  		const span = document.createElement("SPAN");
-  		const hideButton = document.createTextNode("\u00D7");
-  		span.className = "hide";
-  		span.appendChild(hideButton);
-  		toDoList[i].appendChild(span);
+for (let i = 0; i < toDoList.length; i++) {
+	const span = document.createElement("SPAN");
+	const hideButton = document.createTextNode("\u00D7");
+	span.className = "hide";
+	span.appendChild(hideButton);
+	toDoList[i].appendChild(span);
 }
 
 const hide = document.getElementsByClassName("hide");
