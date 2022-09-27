@@ -31,6 +31,7 @@ body {
   padding-bottom: 2px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -41,8 +42,8 @@ body {
 }
 
 .to-do-list--complete {
-  position: absolute;
-  bottom: 20px;
+  margin-top: 500px;
+  bottom: 0px;
 }
 
 .seperate {
@@ -71,7 +72,8 @@ body {
 }
 
 .hide {
-  text-align: right;
+  position: absolute;
+  right: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

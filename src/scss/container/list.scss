@@ -8,6 +8,7 @@
     padding-bottom: 2px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     position: relative;
 }
 
@@ -19,8 +20,8 @@
 }
 
 .to-do-list--complete {
-    position: absolute;
-    bottom: 20px;
+    margin-top: 500px;
+    bottom: 0px;
 }
 
 .seperate {
