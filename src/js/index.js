@@ -10,13 +10,11 @@ function handleError(err) {
 }
 
 function addDelete(input) {
-	// const toDoList = Array.from(document.getElementsByTagName("li"));
-	// for (let i = 0; i < toDoList.length; i++) {
-		const span = document.createElement("SPAN");
-		const hideButton = document.createTextNode("\u00D7");
-		span.className = "hide";
-		span.appendChild(hideButton);
-		input.appendChild(span);
+	const span = document.createElement("SPAN");
+	const hideButton = document.createTextNode("\u00D7");
+	span.className = "hide";
+	span.appendChild(hideButton);
+	input.appendChild(span);
 	}
 
 function hideOnClick() {
@@ -36,7 +34,22 @@ const taskData = fetch(tasks);
 
 // store retrieved data in variable
 
-const responseData = taskData.then((response) => response.json());
+const responseData = taskData
+.then((response) =>  {
+return response.json()});
+
+// function getData(url) {
+// 	fetch(url)
+// 	.then(response => {
+// 		response.json().then(data => {
+// 			resolve(data);
+// 		});
+// 	})
+// 	.catch(function(err) {
+// 		console.log("Fetch error!", err);
+// 		reject(err)
+// 	})
+// };
 
 // create task elements
 
@@ -49,13 +62,13 @@ const responseData = taskData.then((response) => response.json());
 // 	const input = document.createElement("INPUT");
 // 			input.type = "checkbox";
 // 			input.classList.add("checkbox")
-// 			input.id = element[i].id;
+// 			input.id = data[i].id;
 // }
 
 // function createLabel(element, i) {
 // 	const label = document.createElement("LABEL");
 // 			label.textContent = `${element[i].title}`;
-// 			label.setAttribute("for", input.id);
+// 			label.setAttribute("for", data.id);
 // }
 
 
