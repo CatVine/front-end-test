@@ -107,3 +107,14 @@ function createElementsFromAPI() {
 }
 
 createElementsFromAPI();
+
+const toDoLabels = document.querySelectorAll("label");
+console.log(toDoLabels);
+
+function toggleStrike(){
+	toDoLabels.classList.toggle('todo-list__item--checked');
+}
+
+for (let i = 0; i < toDoLabels.length; i++) {
+	toDoLabels[i].addEventListener('click', toggleStrike);
+}
